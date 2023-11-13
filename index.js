@@ -15,7 +15,7 @@ do {
     } else if (operacao == "Saque" && valor > saldo) {
         console.log("Saldo Insuficiente. A transacao nao foi realizada.")
     } else if (operacao == "Saque") {
-        console.log(`Ola ${nome} de CPF (${cpf}), seu saldo atual e R$${saldo}.`)
+        console.log(`Ola, ${nome} de CPF (${cpf}), seu saldo atual e R$${saldo}.`)
         saldo -= valor
         totalTransacoes++
         somaValoresInseridos += valor;
@@ -45,7 +45,7 @@ do {
     }
 
 
-}   while (continuar)
+} while (continuar)
 
 console.log(`Saldo final: R$${saldo}`)
 console.log(`Maior valor inserido: R$${maiorValorInserido}`)
